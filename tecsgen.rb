@@ -14,7 +14,6 @@ class Tecsgen < Formula
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
 
-    ohai prefix
     prefix.install Dir["*"]
 
     bin.mkpath
