@@ -27,7 +27,8 @@ class Tecsgen < Formula
     FileUtils.ln_sf mergeSrc.relative_path_from(mergeDst.parent), mergeDst
 
     ohai "To use tecsgen, an environment variable must be set."
-    ohai "RUBYLIB=/usr/local/opt/tecsgen/tecsgen/"
+    ohai "RUBYLIB=/usr/local/opt/tecsgen/tecsgen"
+    ohai "TECSPATH=/usr/local/opt/tecsgen/tecs"
   end
 
   test do
