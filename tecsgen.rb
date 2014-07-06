@@ -26,7 +26,7 @@ class Tecsgen < Formula
     mergeSrc = Pathname("tecsgen/tecsmerge.rb").expand_path(bin.parent)
     FileUtils.ln_sf mergeSrc.relative_path_from(mergeDst.parent), mergeDst
 
-    ohai "To use tecsgen, an environment variable must be set."
+    ohai "To use tecsgen, a few environment variables must be set."
     ohai "RUBYLIB=/usr/local/opt/tecsgen/tecsgen"
     ohai "TECSPATH=/usr/local/opt/tecsgen/tecs"
   end
